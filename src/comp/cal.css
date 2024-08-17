@@ -1,0 +1,83 @@
+/* Calculator.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #110707;
+  
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: 10px 25px 24px   rgb(128, 0, 96) ;
+  }
+  .calculator:hover{
+    box-shadow: 10px 25px 24px   rgb(0, 111, 128) ;
+
+  }
+  
+  .display {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 0px;
+    font-size: 2em;
+
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  input{
+    height: 40px;
+    width: 100%;
+    font-size: 30px;
+
+  }
+
+  /* Add this to your existing CSS */
+
+@keyframes borderColorChange {
+    0% {
+      border-color: #ddd;
+    }
+    100% {
+      border-color: #ff0000; /* Change to your desired color */
+    }
+  }
+  
+  .btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    animation: borderColorChange 5s forwards; /* Apply the animation */
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
